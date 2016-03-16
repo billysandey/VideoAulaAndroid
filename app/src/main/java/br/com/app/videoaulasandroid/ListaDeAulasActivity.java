@@ -1,5 +1,6 @@
 package br.com.app.videoaulasandroid;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -55,8 +56,31 @@ public class ListaDeAulasActivity extends AppCompatActivity {
         listaDeVideos.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
+                Intent i;
+                switch (position){
+                    case 0:
+                        i = new Intent(ListaDeAulasActivity.this, AulasActivity.class);
+                        startActivity(i);
+                        break;
+                    case 1:
+                        i = new Intent(ListaDeAulasActivity.this, AulasActivity.class);
+                        startActivity(i);
+                        break;
+                    case 2:
+                        i = new Intent(ListaDeAulasActivity.this, AulasActivity.class);
+                        startActivity(i);
+                        break;
+                    case 3:
+                        i = new Intent(ListaDeAulasActivity.this, AulasActivity.class);
+                        startActivity(i);
+                        break;
+                    case 4:
+                        i = new Intent(ListaDeAulasActivity.this, AulasActivity.class);
+                        startActivity(i);
+                        break;
+                    default:
+                        break;
+                }
             }
         });
     }

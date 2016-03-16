@@ -44,6 +44,5 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         durationTextView.setText(durationId[position]);
 
         return rowView;
-
     };
 }
