@@ -29,7 +29,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         this.subTitle = subTitle;
     }
 
-    public View getView(int position,View view,ViewGroup parent) {
+    public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.lista_mobile, null, true);
 

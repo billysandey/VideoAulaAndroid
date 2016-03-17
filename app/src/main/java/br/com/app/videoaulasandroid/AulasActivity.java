@@ -1,5 +1,6 @@
 package br.com.app.videoaulasandroid;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -12,13 +13,19 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class AulasActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     private static final String API_KEY = "AIzaSyBlRhortS7E_u35wSOc17O4_wCDsfdCs4Q";
-    private String ID_VIDEO = "MM4ShEnKw3A";
+    //private String ID_VIDEO = "MM4ShEnKw3A";
     private YouTubePlayerView youTubePlayer;
+
+    private Intent intent;
+    private Bundle params;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aulas);
+
+        intent = getIntent();
+        params = intent.getExtras();
 
         youTubePlayer = (YouTubePlayerView) findViewById(R.id.id_youtube_video);
         youTubePlayer.initialize(API_KEY, this);
@@ -27,6 +34,7 @@ public class AulasActivity extends YouTubeBaseActivity implements YouTubePlayer.
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean loadAgain) {
         if (!loadAgain){
+            String ID_VIDEO = params.getString("ID_VIDEO");
             youTubePlayer.cueVideo(ID_VIDEO);
         }
     }
