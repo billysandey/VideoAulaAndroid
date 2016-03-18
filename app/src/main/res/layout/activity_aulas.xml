@@ -6,21 +6,50 @@
     tools:context="br.com.app.videoaulasandroid.AulasActivity"
     android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="center_horizontal"
-        android:background="#3F51B5"
-        android:text="Video Aulas"
-        android:textSize="20dp"
-        android:paddingTop="25dp"
-        android:paddingLeft="15dp"
-        android:textColor="#FFFFFF"></TextView>
-
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/id_youtube_video"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#222222"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/id_textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="title"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/id_textview_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="subtitle"
+        android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_aulas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+
+
 
 </LinearLayout>
