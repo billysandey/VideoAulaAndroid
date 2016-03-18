@@ -7,7 +7,7 @@
     tools:context="br.com.app.videoaulasandroid.ListaDeAulasActivity">
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/list_de_aulas_cadastradas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="#b5b5b5"

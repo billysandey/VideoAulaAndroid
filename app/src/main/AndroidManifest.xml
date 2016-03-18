@@ -18,7 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListaDeAulasActivity" />
-        <activity android:name=".AulasActivity"></activity>
+        <activity android:name=".AulasActivity" />
+        <activity android:name=".CadastrarVideoAulaActivity" />
+        <activity android:name=".ConsultarVideoAulaActivity" />
+        <activity android:name=".EditarVideoAulaActivity"></activity>
     </application>
 
 </manifest>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Video Aulas Android</string>
+
+    <string name="title_aula">Título da aula</string>
+    <string name="sub_title_aula">Sub-título da aula</string>
+    <string name="duracao_aula">Duração</string>
+    <string name="imagem_aula">Imagem</string>
+    <string name="key_video_aula">Chave do Youtube</string>
+
+    <string name="salvar">Salvar</string>
+    <string name="editar">Editar</string>
+    <string name="deletar">Deletar</string>
+
 </resources>

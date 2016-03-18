@@ -6,9 +6,9 @@ package br.com.app.videoaulasandroid;
 public class Video {
 
     private String[] titleVideo;
-    public String[] subTitle;
-    public String[] duration;
-    public Integer[] imagem;
+    private String[] subTitle;
+    private String[] duration;
+    private Integer[] imagem;
 
     public Video(){
         this.titleVideo = new String[]{
